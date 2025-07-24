@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-@SpringBootApplication(scanBasePackages = {"com.example.task.demotest", "com.controller", "com.service", "com.mapper", "com.domain"})
+@SpringBootApplication(scanBasePackages = {"com.example.task.demotest", "com.controller", "com.service", "com.aop","com.mapper", "com.domain"})
 @MapperScan("com.mapper")
 public class DemotestApplication {
     private static final Logger logger = LoggerFactory.getLogger(DemotestApplication.class);
