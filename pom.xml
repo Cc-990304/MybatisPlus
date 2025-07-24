@@ -82,6 +82,7 @@
                     <include>**/*.xml</include>
                     <include>**/*.yml</include>
                     <include>**/*.yaml</include>
+                    <include>**/*.html</include>
                     <include>**/*.properties</include>
                 </includes>
             </resource>
