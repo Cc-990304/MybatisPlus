@@ -1,9 +1,9 @@
 package com.controller;
 
 import com.domain.MtoChannel;
-import com.example.task.demotest.DemotestApplication;
+
 import com.service.MtoChannelService;
-import javax.annotation.PostConstruct;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

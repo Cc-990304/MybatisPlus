@@ -11,7 +11,7 @@
     <groupId>com.example.task</groupId>
     <artifactId>demotest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <n>demotest</n>
+    <name>demotest</name>
     <description>demotest</description>
 
     <properties>
