@@ -25,5 +25,6 @@ public class DemotestApplication {
         logger.info("Datasource Username: {}", env.getProperty("spring.datasource.username"));
         logger.info("Datasource Password: {}", env.getProperty("spring.datasource.password"));
         logger.info("Datasource Driver: {}", env.getProperty("spring.datasource.driver-class-name"));
+        logger.info("Datasource Properties: {}", env.getProperty("spring.datasource.properties"));
     }
 }
