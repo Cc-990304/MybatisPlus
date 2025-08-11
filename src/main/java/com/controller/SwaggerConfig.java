@@ -29,7 +29,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("Demo Test API")
                 .description("Demo Test API Documentation")
-                .version("2.0.0")
+                .version("3.0.0")
                 .build();
     }
 }
