@@ -11,7 +11,7 @@
     <groupId>com.example.task</groupId>
     <artifactId>demotest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <n>demotest</n>
+    <name>demotest</name>
     <description>demotest</description>
 
     <properties>
@@ -66,6 +66,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>2.6.7</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -76,6 +82,7 @@
                     <include>**/*.xml</include>
                     <include>**/*.yml</include>
                     <include>**/*.yaml</include>
+                    <include>**/*.html</include>
                     <include>**/*.properties</include>
                 </includes>
             </resource>

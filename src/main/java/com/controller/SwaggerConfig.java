@@ -16,6 +16,7 @@ public class SwaggerConfig {
 
     @Bean
     public Docket api() {
+        System.out.println("wwwwww");
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.controller"))
@@ -28,7 +29,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("Demo Test API")
                 .description("Demo Test API Documentation")
-                .version("1.0.0")
+                .version("5.0.0")
                 .build();
     }
 }

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-@SpringBootApplication(scanBasePackages = {"com.example.task.demotest", "com.controller", "com.service", "com.mapper", "com.domain"})
+@SpringBootApplication(scanBasePackages = {"com.example.task.demotest", "com.controller", "com.service", "com.aop","com.mapper", "com.domain"})
 @MapperScan("com.mapper")
 public class DemotestApplication {
     private static final Logger logger = LoggerFactory.getLogger(DemotestApplication.class);
@@ -19,11 +19,13 @@ public class DemotestApplication {
 
         // 从上下文中获取环境配置
         ConfigurableEnvironment env = context.getEnvironment();
+        System.out.println(123456);
 
         // 记录数据源信息
         logger.info("Datasource URL: {}", env.getProperty("spring.datasource.url"));
         logger.info("Datasource Username: {}", env.getProperty("spring.datasource.username"));
         logger.info("Datasource Password: {}", env.getProperty("spring.datasource.password"));
         logger.info("Datasource Driver: {}", env.getProperty("spring.datasource.driver-class-name"));
+        logger.info("Datasource Properties: {}", env.getProperty("spring.datasource.properties"));
     }
 }
