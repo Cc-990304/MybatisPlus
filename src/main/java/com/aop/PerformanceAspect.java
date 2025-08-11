@@ -20,6 +20,7 @@ public class PerformanceAspect {
     // 定义切入点，匹配指定包下的insert方法
     @Pointcut("execution(public * com.controller.*.insert(..))")
     public void insertMethod() {
+        System.out.println("55");
     }
 
     // 环绕通知，记录方法执行时间
