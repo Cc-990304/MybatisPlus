@@ -19,6 +19,7 @@ public class DemotestApplication {
 
         // 从上下文中获取环境配置
         ConfigurableEnvironment env = context.getEnvironment();
+        System.out.println(123456);
 
         // 记录数据源信息
         logger.info("Datasource URL: {}", env.getProperty("spring.datasource.url"));
